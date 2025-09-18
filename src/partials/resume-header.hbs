@@ -3,6 +3,13 @@
     <div class="profile-header pull-left">
         <h1>{{name}}</h1>
         <h2>{{label}}</h2>
+        {{#if pdfUrl}}
+        <div class="download-button-container">
+            <a href="{{pdfUrl}}" download="{{name}}_Resume.pdf" class="download-button">
+                <i class="fa fa-download" aria-hidden="true"></i> Download CV
+            </a>
+        </div>
+        {{/if}}
     </div>
     <div class="profile-pic pull-right">
         {{#if picture}}
